@@ -165,3 +165,12 @@ app.listen(PORT, () => {
   console.log(`🚀 Сервер дар порт ${PORT} кор мекунад`);
   console.log(`📱 Webhook: http://localhost:${PORT}/webhook`);
 });
+// Privacy Policy
+app.get("/privacy", (req, res) => {
+  res.send(`
+    <h1>Privacy Policy - JumaShop Bot</h1>
+    <p>Мо маълумоти шахсии шуморо ҷамъ намекунем.</p>
+    <p>Бот танҳо барои ҷавоб додан ба паёмҳои Instagram истифода мешавад.</p>
+    <p>Тамос: juma_shop.tj</p>
+  `);
+});
